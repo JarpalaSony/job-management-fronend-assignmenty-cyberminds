@@ -78,7 +78,7 @@ export default function JobListingPage() {
                     title: job.title,
                     company: job.companyName,
                     logo: job.companyLogo
-                      ? `http://localhost:5000${job.companyLogo}`
+                      ? `https://job-management-backend-assignmentby.onrender.com${job.companyLogo}`
                       : "https://cdn-icons-png.flaticon.com/512/2965/2965879.png", // fallback
                     experience: job.experience || "0-2 yr Exp",
                     location: job.location,
