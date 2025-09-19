@@ -29,7 +29,7 @@ export default function CreateJobForm({ onSuccess }) {
         formData.append("companyLogo", data.companyLogo[0]);
       }
 
-      const res = await axios.post("http://localhost:5000/jobs", formData, {
+      const res = await axios.post("https://job-management-backend-assignmentby.onrender.com/jobs", formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
 

@@ -12,7 +12,7 @@ export default function JobListingPage() {
     jobType: "",
     location: "",
     minSalary: 0,
-    maxSalary: 50, // salary in LPA
+    maxSalary: 50
   });
 
   const [jobs, setJobs] = useState([]);
@@ -23,7 +23,7 @@ export default function JobListingPage() {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/jobs");
+        const res = await axios.get("https://job-management-backend-assignmentby.onrender.com/jobs");
         setJobs(res.data);
       } catch (error) {
         console.error("Error fetching jobs:", error);
